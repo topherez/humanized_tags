@@ -5,7 +5,7 @@
 Humanized Tag lists in cakePHP.
 
 
-***Usage (in your view):**
+**Usage (in your view):**
 
 1. Drop the file into app/views/helpers
 
