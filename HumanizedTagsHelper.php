@@ -18,10 +18,14 @@ class HumanizedTagsHelper extends AppHelper {
     			$tag = ucwords($tag);
     		}
     		
-    		if($counter < $listLength){
+    		if($listLength == 1){
+    			$tagString .= $tag;
+    		}elseif($counter == ($listLength - 1)){
+    			$tagString .= $tag;
+    		}elseif($counter < $listLength){
     			$tagString .= $tag . ', ';
     		}else{
-    			$tagString .= 'and ' . $tag;
+    			$tagString .= ' and ' . $tag;
     		}
     		
     		$counter++;
